@@ -1,0 +1,15 @@
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.csproj.AssemblyReference.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.AssemblyInfoInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.AssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\bin\Debug\net8.0\Infrastructure.FluentApi.deps.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\bin\Debug\net8.0\Infrastructure.FluentApi.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\bin\Debug\net8.0\Infrastructure.FluentApi.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\bin\Debug\net8.0\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\bin\Debug\net8.0\Domain.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastr.5BF005BA.Up2Date
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\refint\Infrastructure.FluentApi.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\Infrastructure.FluentApi.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.FluentApi\obj\Debug\net8.0\ref\Infrastructure.FluentApi.dll

@@ -1,0 +1,12 @@
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\bin\Debug\net8.0\Application.Contract.deps.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\bin\Debug\net8.0\Application.Contract.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\bin\Debug\net8.0\Application.Contract.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.AssemblyInfoInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.AssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\refint\Application.Contract.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\ref\Application.Contract.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application.Contract\obj\Debug\net8.0\Application.Contract.csproj.AssemblyReference.cache

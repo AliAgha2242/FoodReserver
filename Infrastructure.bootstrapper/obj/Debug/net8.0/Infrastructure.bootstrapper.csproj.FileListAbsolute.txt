@@ -1,0 +1,12 @@
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\bin\Debug\net8.0\Infrastructure.bootstrapper.deps.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\bin\Debug\net8.0\Infrastructure.bootstrapper.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\bin\Debug\net8.0\Infrastructure.bootstrapper.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.csproj.AssemblyReference.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.AssemblyInfoInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.AssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\refint\Infrastructure.bootstrapper.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\Infrastructure.bootstrapper.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.bootstrapper\obj\Debug\net8.0\ref\Infrastructure.bootstrapper.dll

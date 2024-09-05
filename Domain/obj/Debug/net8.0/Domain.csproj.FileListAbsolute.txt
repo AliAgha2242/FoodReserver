@@ -1,0 +1,11 @@
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\bin\Debug\net8.0\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\bin\Debug\net8.0\Domain.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\Domain.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Domain\obj\Debug\net8.0\ref\Domain.dll

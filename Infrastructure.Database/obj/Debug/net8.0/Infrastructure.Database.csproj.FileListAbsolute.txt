@@ -1,0 +1,17 @@
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.csproj.AssemblyReference.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.AssemblyInfoInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.AssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Infrastructure.Database.deps.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Infrastructure.Database.runtimeconfig.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Infrastructure.Database.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Infrastructure.Database.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\bin\Debug\net8.0\Domain.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastr.BF6F5FBF.Up2Date
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\refint\Infrastructure.Database.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\Infrastructure.Database.genruntimeconfig.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Infrastructure.Database\obj\Debug\net8.0\ref\Infrastructure.Database.dll
