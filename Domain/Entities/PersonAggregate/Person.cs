@@ -15,7 +15,6 @@ namespace Domain.Entities.PersonAggregate
         public string PersonName { get; private set; }
         public string HashPassword { get; private set; }
         public string PasswordSalt { get; private set; }
-        public string FullPassword { get; private set; }
         public string FullName { get; private set; }
         public string Email { get; private set; }
         public string PhoneNumber { get; private set; }
@@ -38,7 +37,6 @@ namespace Domain.Entities.PersonAggregate
             Email = email;
             IsActive = true;
             CreationDate = DateTime.Now;
-            FullPassword = this.FullPasswordGeneratore(PasswordSalt,hashPassword);
             PhoneNumber = phoneNumber;
         }
 
@@ -59,6 +57,10 @@ namespace Domain.Entities.PersonAggregate
         {
             this.IsActive = true;
         }
+        public void ResetPassword(string hashPassword)
+        {
+            HashPassword = hashPassword;
+        }
 
         public void EditPerson(string personName, string hashPassword, string fullName, string email,string phoneNumber)
         {
@@ -66,17 +68,8 @@ namespace Domain.Entities.PersonAggregate
             HashPassword = hashPassword;
             FullName = fullName;
             Email = email;
-            FullPassword = this.FullPasswordGeneratore(this.PasswordSalt,hashPassword);
             PhoneNumber = phoneNumber;
         }
-        private string FullPasswordGeneratore(string PasswordSalt,string HashPassword)
-        {
-            return string.Concat(PasswordSalt,HashPassword);
-        }
-
-
-
-        //ctor for efCore
 
     }
 }

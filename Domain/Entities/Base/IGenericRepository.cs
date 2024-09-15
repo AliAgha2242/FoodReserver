@@ -12,8 +12,9 @@ namespace Domain.Entities.Base
     {
         Task CreateAsync(T entity);
         Task<T?> GetAsync(Guid entityId);
-        Task<ICollection<T>> GetAllAsync(Expression<Func<T,bool>> func);
+        Task<ICollection<T>> GetAllAsync();
         void Edit(T entity);
         Task SaveChengesAsync();
+        Task<bool> ExistAsync(Expression<Func<T,bool>> expression);
     }
 }

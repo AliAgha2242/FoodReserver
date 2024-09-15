@@ -1,21 +1,117 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0",
-    "RelativePath": "weatherforecast",
-    "HttpMethod": "GET",
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CPersonMinimalApi\u003Eb__0_0",
+    "RelativePath": "CreatePerson",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.CreatePersonRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "WeatherForecast[]",
+        "Type": "Application.Contract.Dtos.CreatePersonResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "EndpointName": "Create Person"
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CPersonMinimalApi\u003Eb__0_2",
+    "RelativePath": "DeletePerson",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.DeletePersonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.DeletePersonResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CPersonMinimalApi\u003Eb__0_1",
+    "RelativePath": "GetAllPerson",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.GetAllPersonResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CPersonMinimalApi\u003Eb__0_4",
+    "RelativePath": "ResetPersonPassword",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.ResetPasswordPersonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.ResetPasswordPersonResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CPersonMinimalApi\u003Eb__0_3",
+    "RelativePath": "RestorePerson",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.RestorePersonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.RestorePersonResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

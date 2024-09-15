@@ -2,6 +2,7 @@
 using Domain.Entities.Base;
 using Domain.Entities.FoodAggregate;
 using Domain.Entities.PersonAggregate;
+using Domain.Entities.ReciveAggregate;
 
 namespace Domain.Entities.ReserveAggregate
 {
@@ -11,11 +12,12 @@ namespace Domain.Entities.ReserveAggregate
         public DateTime CreateReserveTime { get; private set; }
         public DateTime ReserveDate { get; private set; }
         public bool IsActive { get; private set; }
-        public Guid PersonId { get; private set; }
+        public Guid? PersonId { get; private set; }
         public Guid Addressid { get; private set; }
         public Address Address { get; private set; }
         public Person Person{ get; private set; }
         public ICollection<Food> Foods { get; private set; }
+        public Recive? Recive{ get; private set; }
 
 
         private Reserve( DateTime reserveDate, Guid personId, Guid addressid)
@@ -42,5 +44,9 @@ namespace Domain.Entities.ReserveAggregate
             Addressid = addressid ;
         }
         //ctor for efCore
+        public Reserve()
+        {
+            
+        }
     }
 }

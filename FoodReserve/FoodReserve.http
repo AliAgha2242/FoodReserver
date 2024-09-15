@@ -1,6 +1,22 @@
-@FoodReserve_HostAddress = http://localhost:5018
+@FoodReserve_HostAddress = https://localhost:7194
 
 GET {{FoodReserve_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+POST {{FoodReserve_HostAddress}}/CreatePerson
+
+###
+
+POST {{FoodReserve_HostAddress}}/DeletePerson
+
+###
+
+GET {{FoodReserve_HostAddress}}/GetAllPerson
+Content-Type : application/json
+###
+
+GET {{FoodReserve_HostAddress}}/GetAllPerson
 
 ###

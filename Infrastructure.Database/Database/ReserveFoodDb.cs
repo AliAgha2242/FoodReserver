@@ -23,7 +23,7 @@ namespace Infrastructure.Database.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<Recive>().HasKey(r=>r.ReserveId);
             base.OnModelCreating(modelBuilder);
         }
 

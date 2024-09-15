@@ -1,11 +1,17 @@
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Application.deps.json
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Application.dll
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Application.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Application.Contract.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Domain.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Application.Contract.pdb
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\bin\Debug\net8.0\Domain.pdb
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.dll
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\refint\Application.dll
 D:\MySource\FoodReserverApiProject\FoodReserve\Application\obj\Debug\net8.0\Application.pdb

@@ -1,11 +1,6 @@
-﻿using Application.Contract.Dtos;
+﻿using Application.Contract.Dtos.Person;
 using Application.Services.PersonService.Commands;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.bootstrapper
 {
@@ -16,7 +11,7 @@ namespace Infrastructure.bootstrapper
             services.AddMediatR(p =>
             {
                 p.RegisterServicesFromAssemblies
-                (typeof(CreatePersonHandller).Assembly,typeof(CreatePersonResponse).Assembly);
+                (typeof(CreatePersonHandler).Assembly, typeof(CreatePersonResponse).Assembly);
             });
             return services ;
         }

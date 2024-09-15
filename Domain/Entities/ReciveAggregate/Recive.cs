@@ -5,22 +5,21 @@ using Domain.Entities.ReserveAggregate;
 
 namespace Domain.Entities.ReciveAggregate
 {
-    public class Recive : AggregateRoot
+    public class Recive 
     {
         
-
-        public DateTime ReciveDate { get; private set; }
-        public Guid EmployerId { get; private set; }
+        public DateTime? ReciveDate { get; private set; }
+        public Guid? EmployerId { get; private set; }
         public Guid ReserveId { get; private set; }
         public PayType PayType { get; private set; }
-        public Employer Employer { get; private set; }
+        public Employer? Employer { get; private set; }
         public Reserve Reserve { get; private set; }
 
 
         public Recive(DateTime reciveDate, Guid employerId, Guid reserveId, PayType payType)
         {
             ReciveDate = reciveDate;
-            ReserveId = reserveId;
+            //ReserveId = reserveId;
             PayType = payType;
             EmployerId = employerId;
         }
@@ -33,11 +32,14 @@ namespace Domain.Entities.ReciveAggregate
         {
             ReciveDate = reciveDate;
             EmployerId = employerId;
-            ReserveId = reserveId;
+            //ReserveId = reserveId;
             PayType = payType;
         }
 
         //ctor for Efcore
+        public Recive()
+        {
+        }
     }
 
     public enum PayType

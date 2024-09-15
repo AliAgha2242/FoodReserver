@@ -35,14 +35,19 @@ namespace Infrastructure.Database.baseRepository
             return await FoodDb.Set<T>().FindAsync(entityId);
         } 
 
-        public async Task<ICollection<T>> GetAllAsync(Expression<Func<T,bool>> func)
+        public async Task<ICollection<T>> GetAllAsync()
         {
-            return await FoodDb.Set<T>().AsNoTracking().Where(func).ToListAsync();
+            return await FoodDb.Set<T>().AsNoTracking().ToListAsync();
         }
 
         public async Task SaveChengesAsync()
         {
             await FoodDb.SaveChangesAsync();
+        }
+
+        public async Task<bool> ExistAsync(Expression<Func<T,bool>> expression)
+        {
+            return await FoodDb.Set<T>().AnyAsync(expression);
         }
     }
 }

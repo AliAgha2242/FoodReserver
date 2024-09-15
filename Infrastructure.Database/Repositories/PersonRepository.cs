@@ -1,6 +1,7 @@
 ﻿using Domain.Entities.PersonAggregate;
 using Infrastructure.Database.baseRepository;
 using Infrastructure.Database.Database;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,16 @@ namespace Infrastructure.Database.Repositories
             {
                 person.RestorePerson();
             }
+        }
+
+        public async Task ResetPassword(Person person, string newPassword)
+        {
+            person.ResetPassword(newPassword);
+        }
+
+        public bool CheckPassword(Person person, string password)
+        {
+            return person.HashPassword == password;
         }
     }
 }

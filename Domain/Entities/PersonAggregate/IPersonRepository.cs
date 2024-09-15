@@ -11,6 +11,8 @@ namespace Domain.Entities.PersonAggregate
     {
         Task Delete(Guid PersonId);
         Task Restore(Guid PersonId);
+        Task ResetPassword(Person person,string newPassword);
+        bool CheckPassword(Person person , string password);
 
     }
 }

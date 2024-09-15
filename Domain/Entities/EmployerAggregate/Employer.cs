@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.Base;
+using Domain.Entities.ReciveAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,34 +13,32 @@ namespace Domain.Entities.OperatoreAggregate
         public string UserName { get; private set; }
         public string FullName { get; private set; }
         public string EmployerCode { get; private set; }
+        public Guid HourseOfWorkId { get; private set; }
         public DateOnly EmploymentDate { get; private set; }
         public byte TimeOfContract { get; private set; }
         public bool IsActive { get; private set; }
-        public HourseOfWork HourseOfWorks { get; private set; }
+        public HourseOfWork HourseOfWork { get; private set; }
         public ICollection<DaysOfWeekForWork> DaysOfWeeksForWork { get; private set; }
+        public ICollection<Recive> Recives { get; private set; }
 
         private Employer(string userName, string fullName, string employerCode, byte timeOfContract,
-            TimeOnly StartWork, TimeOnly EndWork)
+           Guid hoursOfWorkId )
         {
             UserName = userName;
             FullName = fullName;
             EmployerCode = employerCode;
             EmploymentDate = DateOnly.FromDateTime(DateTime.Now);
             TimeOfContract = timeOfContract;
-            HourseOfWorks = SetHourseOfWork(StartWork,EndWork); 
             IsActive = true;
+            HourseOfWorkId = hoursOfWorkId ;
         }
 
         public static Employer Create(string userName, string fullName, string employerCode,
-            byte timeOfContract, TimeOnly StartWork, TimeOnly EndWork)
+            byte timeOfContract, Guid hourseOfWorkId)
         {
-            return new Employer(userName,fullName,employerCode,timeOfContract,StartWork,EndWork);
+            return new Employer(userName,fullName,employerCode,timeOfContract,hourseOfWorkId);
         }
 
-        public HourseOfWork SetHourseOfWork(TimeOnly StartWork,TimeOnly EndWork)
-        {
-            return HourseOfWork.Create(StartWork,EndWork);
-        }
 
 
         public void RemoveEmployer()

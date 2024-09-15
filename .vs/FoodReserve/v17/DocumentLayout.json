@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B77FD2F6-8892-4A65-A7C4-FC519F502042}|Application\\Application.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\application\\services\\personservice\\commands\\createpersonhandller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B77FD2F6-8892-4A65-A7C4-FC519F502042}|Application\\Application.csproj|solutionrelative:application\\services\\personservice\\commands\\createpersonhandller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\domain\\entities\\foodcategoryaggregate\\foodcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\foodcategoryaggregate\\foodcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BED8C6E-1AF8-4B7B-8A50-683F2B2BADCE}|Application.Contract\\Application.Contract.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\application.contract\\dtos\\createpersonrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BED8C6E-1AF8-4B7B-8A50-683F2B2BADCE}|Application.Contract\\Application.Contract.csproj|solutionrelative:application.contract\\dtos\\createpersonrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BED8C6E-1AF8-4B7B-8A50-683F2B2BADCE}|Application.Contract\\Application.Contract.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\application.contract\\dtos\\foodcategory\\createfoodcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BED8C6E-1AF8-4B7B-8A50-683F2B2BADCE}|Application.Contract\\Application.Contract.csproj|solutionrelative:application.contract\\dtos\\foodcategory\\createfoodcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{110A5103-38B6-406E-BD5C-1247483BA0A1}|Infrastructure.bootstrapper\\Infrastructure.bootstrapper.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\infrastructure.bootstrapper\\servicesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{110A5103-38B6-406E-BD5C-1247483BA0A1}|Infrastructure.bootstrapper\\Infrastructure.bootstrapper.csproj|solutionrelative:infrastructure.bootstrapper\\servicesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD631420-7179-411D-A645-A8451037B180}|FoodReserve\\FoodReserve.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\foodreserve\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD631420-7179-411D-A645-A8451037B180}|FoodReserve\\FoodReserve.csproj|solutionrelative:foodreserve\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\domain\\entities\\addressaggreagte\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\addressaggreagte\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D008321F-D0DC-40BF-9FC4-2561F789268E}|Infrastructure.Database\\Infrastructure.Database.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\infrastructure.database\\database\\reservefooddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D008321F-D0DC-40BF-9FC4-2561F789268E}|Infrastructure.Database\\Infrastructure.Database.csproj|solutionrelative:infrastructure.database\\database\\reservefooddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{110A5103-38B6-406E-BD5C-1247483BA0A1}|Infrastructure.bootstrapper\\Infrastructure.bootstrapper.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\infrastructure.bootstrapper\\mediatrconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{110A5103-38B6-406E-BD5C-1247483BA0A1}|Infrastructure.bootstrapper\\Infrastructure.bootstrapper.csproj|solutionrelative:infrastructure.bootstrapper\\mediatrconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|d:\\mysource\\foodreserverapiproject\\foodreserve\\domain\\entities\\foodcategoryaggregate\\ifoodcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BAFB4BD-F5B0-4E98-B62D-F96C4F422A66}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\foodcategoryaggregate\\ifoodcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServicesConfiguration.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.bootstrapper\\ServicesConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure.bootstrapper\\ServicesConfiguration.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.bootstrapper\\ServicesConfiguration.cs",
-              "RelativeToolTip": "Infrastructure.bootstrapper\\ServicesConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:16:14.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\FoodReserve\\Program.cs",
-              "RelativeDocumentMoniker": "FoodReserve\\Program.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\FoodReserve\\Program.cs",
-              "RelativeToolTip": "FoodReserve\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:16:00.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReserveFoodDb.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.Database\\Database\\ReserveFoodDb.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Database\\Database\\ReserveFoodDb.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.Database\\Database\\ReserveFoodDb.cs",
-              "RelativeToolTip": "Infrastructure.Database\\Database\\ReserveFoodDb.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA3wBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:12:23.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Address.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\AddressAggreagte\\Address.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\AddressAggreagte\\Address.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\AddressAggreagte\\Address.cs",
-              "RelativeToolTip": "Domain\\Entities\\AddressAggreagte\\Address.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA3wDAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:12:18.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreatePersonHandller.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application\\Services\\PersonService\\Commands\\CreatePersonHandller.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\PersonService\\Commands\\CreatePersonHandller.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application\\Services\\PersonService\\Commands\\CreatePersonHandller.cs",
-              "RelativeToolTip": "Application\\Services\\PersonService\\Commands\\CreatePersonHandller.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T15:09:23.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreatePersonRequest.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application.Contract\\Dtos\\CreatePersonRequest.cs",
-              "RelativeDocumentMoniker": "Application.Contract\\Dtos\\CreatePersonRequest.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application.Contract\\Dtos\\CreatePersonRequest.cs",
-              "RelativeToolTip": "Application.Contract\\Dtos\\CreatePersonRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAEAAAAAAAAAA==",
+              "Title": "CreateFoodCategoryRequest.cs",
+              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application.Contract\\Dtos\\FoodCategory\\CreateFoodCategoryRequest.cs",
+              "RelativeDocumentMoniker": "Application.Contract\\Dtos\\FoodCategory\\CreateFoodCategoryRequest.cs",
+              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Application.Contract\\Dtos\\FoodCategory\\CreateFoodCategoryRequest.cs",
+              "RelativeToolTip": "Application.Contract\\Dtos\\FoodCategory\\CreateFoodCategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T15:07:07.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MediatRConfiguration.cs",
-              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.bootstrapper\\MediatRConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure.bootstrapper\\MediatRConfiguration.cs",
-              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Infrastructure.bootstrapper\\MediatRConfiguration.cs",
-              "RelativeToolTip": "Infrastructure.bootstrapper\\MediatRConfiguration.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA1wBQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T15:00:45.736Z",
+              "WhenOpened": "2024-09-14T15:32:32.608Z",
               "EditorCaption": ""
             },
             {
@@ -142,6 +48,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IFoodCategoryRepository.cs",
+              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\FoodCategoryAggregate\\IFoodCategoryRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\FoodCategoryAggregate\\IFoodCategoryRepository.cs",
+              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\FoodCategoryAggregate\\IFoodCategoryRepository.cs",
+              "RelativeToolTip": "Domain\\Entities\\FoodCategoryAggregate\\IFoodCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:31:07.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FoodCategory.cs",
+              "DocumentMoniker": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\FoodCategoryAggregate\\FoodCategory.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\FoodCategoryAggregate\\FoodCategory.cs",
+              "ToolTip": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\Domain\\Entities\\FoodCategoryAggregate\\FoodCategory.cs",
+              "RelativeToolTip": "Domain\\Entities\\FoodCategoryAggregate\\FoodCategory.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:30:52.978Z",
+              "EditorCaption": ""
             }
           ]
         }

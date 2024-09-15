@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.Base;
+using Domain.Entities.FoodAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace Domain.Entities.FoodCategoryAggregate
         public Guid? ParentCategoryId { get; private set; }
         public bool IsActive { get; private set; }
         public ICollection<FoodCategory> SubCategory { get; private set; }
+        public FoodCategory ParentCategory { get; private set; }
+        public ICollection<Food> Foods { get; private set; }
 
         private FoodCategory(string categoryName,Guid? parentCategoryId)
         {
