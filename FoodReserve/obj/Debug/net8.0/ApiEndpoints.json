@@ -1,6 +1,33 @@
 [
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_0",
+    "RelativePath": "CreateFoodCategory",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.CreateFoodCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.FoodCategory.CreateFoodCategoryResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CPersonMinimalApi\u003Eb__0_0",
     "RelativePath": "CreatePerson",
     "HttpMethod": "POST",
@@ -9,20 +36,22 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Application.Contract.Dtos.CreatePersonRequest",
+        "Type": "Application.Contract.Dtos.Person.CreatePersonRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Contract.Dtos.CreatePersonResponse",
+        "Type": "Application.Contract.Dtos.Person.CreatePersonResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
     ],
-    "EndpointName": "Create Person"
+    "Tags": [
+      "Person"
+    ]
   },
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
@@ -34,18 +63,69 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Application.Contract.Dtos.DeletePersonRequest",
+        "Type": "Application.Contract.Dtos.Person.RemovePersonRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Contract.Dtos.DeletePersonResponse",
+        "Type": "Application.Contract.Dtos.Person.RemovePersonResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_1",
+    "RelativePath": "EditFoodCategory",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.EditFoodCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.FoodCategory.EditFoodCategoryResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_5",
+    "RelativePath": "GetAllFoodCategory",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.FoodCategory.GetAllFoodCategoryResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
     ]
   },
   {
@@ -58,12 +138,96 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.GetAllPersonResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.Person.GetAllPersonResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_4",
+    "RelativePath": "GetFoodCategory",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.GetFoodCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.FoodCategory.GetFoodCategoryResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_6",
+    "RelativePath": "GetSubCategories",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.GetAllSubCatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.FoodCategory.GetAllSubCatResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_2",
+    "RelativePath": "RemoveFoodCategory",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.RemoveFoodCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.FoodCategory.RemoveFoodCategoryReponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
     ]
   },
   {
@@ -76,18 +240,48 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Application.Contract.Dtos.ResetPasswordPersonRequest",
+        "Type": "Application.Contract.Dtos.Person.ResetPasswordPersonRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Contract.Dtos.ResetPasswordPersonResponse",
+        "Type": "Application.Contract.Dtos.Person.ResetPasswordPersonResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_3",
+    "RelativePath": "RestoreFoodCategory",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.FoodCategory.RestoreFoodCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.FoodCategory.RestoreFoodCategoryResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "FoodCategory"
     ]
   },
   {
@@ -100,18 +294,21 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Application.Contract.Dtos.RestorePersonRequest",
+        "Type": "Application.Contract.Dtos.Person.RestorePersonRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Contract.Dtos.RestorePersonResponse",
+        "Type": "Application.Contract.Dtos.Person.RestorePersonResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Person"
     ]
   }
 ]

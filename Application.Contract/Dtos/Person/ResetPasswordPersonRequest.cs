@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Contract.Dtos.BaseDto;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,7 @@ namespace Application.Contract.Dtos.Person
         public string NewPassword { get; set; }
     }
 
-    public class ResetPasswordPersonResponse
+    public class ResetPasswordPersonResponse : ResponseBase
     {
-        public bool IsOkey { get; set; }
     }
 }

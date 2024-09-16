@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Contract.Dtos.BaseDto;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +17,8 @@ namespace Application.Contract.Dtos.Person
         public string FullName { get; set; }
     }
 
-    public class CreatePersonResponse
+    public class CreatePersonResponse : ResponseBase
     {
-        public bool IsOkey { get; set; }
     }
 
 }

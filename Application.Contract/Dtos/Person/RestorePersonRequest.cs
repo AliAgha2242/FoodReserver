@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Contract.Dtos.BaseDto;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,7 @@ namespace Application.Contract.Dtos.Person
         public Guid Id { get; set; }
     }
 
-    public class RestorePersonResponse
+    public class RestorePersonResponse : ResponseBase
     {
-        public bool IsOkey { get; set; }
     }
 }

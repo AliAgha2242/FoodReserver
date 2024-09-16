@@ -2,6 +2,7 @@
 using Domain.Entities.FoodCategoryAggregate;
 using Infrastructure.Database.baseRepository;
 using Infrastructure.Database.Database;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace Infrastructure.Database.Repositories
         }
 
 
-        public async Task Delete(Guid foodCategory)
+        public async Task Remove(Guid foodCategory)
         {
             FoodCategory? FoodCategory= await GetAsync(foodCategory);
             if (FoodCategory != null)
@@ -37,6 +38,16 @@ namespace Infrastructure.Database.Repositories
                 FoodCategory.RestoreFoodCategory();
             }
 
+        }
+
+        public async Task<ICollection<FoodCategory>> GetAllWithParentRelationAsync()
+        {
+            return await FoodDb.FoodCategories.Include(f=>f.ParentCategory).AsNoTracking().ToListAsync();
+        }
+
+        public async Task<ICollection<FoodCategory>> GetAllSubCatAsync(Guid id)
+        {
+            return await FoodDb.FoodCategories.AsQueryable().AsNoTracking().Where(f=>f.ParentCategoryId == id).ToListAsync();
         }
     }
 }

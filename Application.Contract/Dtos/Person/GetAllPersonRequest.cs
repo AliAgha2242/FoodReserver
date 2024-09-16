@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Contract.Dtos.BaseDto;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Application.Contract.Dtos.Person
     {
     }
 
-    public class GetAllPersonResponse
+    public class GetAllPersonResponse : ResponseBase
     {
         public string name { get; set; }
         public string HashPassword { get; set; }

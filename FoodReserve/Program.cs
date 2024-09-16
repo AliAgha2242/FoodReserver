@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddAntiforgery();
+builder.Services.AddAntiforgery();
 
 //builder.Services.DbConfigure(builder.Configuration.GetConnectionString("Index"));
 builder.Services.ServiceConfigure();
@@ -29,9 +29,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAntiforgery();
 app.UseHttpsRedirection();
 app.PersonMinimalApi();
-//app.UseAntiforgery();
+app.FoodCategoryMinimalApi();
 
 
 

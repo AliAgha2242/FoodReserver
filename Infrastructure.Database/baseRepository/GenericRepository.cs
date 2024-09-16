@@ -25,7 +25,7 @@ namespace Infrastructure.Database.baseRepository
             await FoodDb.Set<T>().AddAsync(entity);
         }
 
-        public void Edit( T entity)
+        public async Task EditAsync( T entity)
         {
             FoodDb.Set<T>().Update(entity);
         }  

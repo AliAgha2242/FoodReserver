@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.PersonService.Commands
 {
-    public class DeletePersonHandler : IRequestHandler<DeletePersonRequest, DeletePersonResponse>
+    public class DeletePersonHandler : IRequestHandler<RemovePersonRequest, RemovePersonResponse>
     {
         public IPersonRepository Repository { get; }
         public DeletePersonHandler(IPersonRepository repository)
@@ -18,17 +18,17 @@ namespace Application.Services.PersonService.Commands
         }
 
 
-        public async Task<DeletePersonResponse> Handle(DeletePersonRequest request, CancellationToken cancellationToken)
+        public async Task<RemovePersonResponse> Handle(RemovePersonRequest request, CancellationToken cancellationToken)
         {
             var person = await Repository.GetAsync(request.Id);
             if (person == null)
-                return new DeletePersonResponse()
+                return new RemovePersonResponse()
                 {
                     IsOkey = false
                 };
             Repository.Delete(request.Id).GetAwaiter();
             Repository.SaveChengesAsync().Wait();
-            return new DeletePersonResponse()
+            return new RemovePersonResponse()
             {
                 IsOkey = true
             };
