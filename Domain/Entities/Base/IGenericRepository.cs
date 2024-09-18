@@ -11,7 +11,7 @@ namespace Domain.Entities.Base
     public interface IGenericRepository<T> where T : class
     {
         Task CreateAsync(T entity);
-        Task<T?> GetAsync(Guid entityId);
+        Task<T> GetAsync(Guid entityId);
         Task<ICollection<T>> GetAllAsync();
         Task EditAsync(T entity);
         Task SaveChengesAsync();

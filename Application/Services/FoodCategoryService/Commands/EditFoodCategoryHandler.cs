@@ -47,7 +47,7 @@ namespace Application.Services.FoodCategoryService.Commands
                     StatusCode = 404 
                 };
 
-            FoodCategory? foodCategory = await repository.GetAsync(request.id);
+            FoodCategory foodCategory = await repository.GetAsync(request.id);
             foodCategory?.Edit(request.FoodCategoryName,request.ParentCategoryId);
 
 

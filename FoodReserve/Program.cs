@@ -2,6 +2,8 @@ using Application.Utilities;
 using Infrastructure.Database;
 using Infrastructure.bootstrapper;
 using FoodReserve.MinimalApies;
+using Infrastructure.Database.Database;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +19,14 @@ builder.Services.MediatRConfigure();
 
 builder.Services.AddOptions();
 builder.Services.Configure<EncriptTools>(builder.Configuration.GetSection("EncriptionConfig"));
+builder.Services.AddDbContext<ReserveFoodDb>(p =>
+{
+    p.UseSqlServer(builder.Configuration.GetConnectionString("Index"));
+});
 
-builder.Services.DbConfigure(builder.Configuration);
+//builder.Services.DbConfigure(builder.Configuration.GetConnectionString("Index"));
 var app = builder.Build();
+
 
 
 // Configure the HTTP request pipeline.

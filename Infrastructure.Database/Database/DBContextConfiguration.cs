@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Database
 {
-    public static class DBContextConfiguration
-    {
-        public static IServiceCollection DbConfigure(this IServiceCollection services , string? connectionString)
-        {
-            services.AddDbContext<ReserveFoodDb>(p =>
-            {
-                p.UseSqlServer(connectionString);
-            });
-            return services ;
-        }
-    }
+    //public static class DBContextConfiguration
+    //{
+    //    public static IServiceCollection DbConfigure(this IServiceCollection services , string? connectionString)
+    //    {
+    //        services.AddDbContext<ReserveFoodDb>(p =>
+    //        {
+    //            p.UseSqlServer(connectionString);
+    //        });
+    //        return services ;
+    //    }
+    //}
 }

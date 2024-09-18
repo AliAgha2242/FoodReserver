@@ -12,13 +12,13 @@ namespace Infrastructure.bootstrapper
 {
     public static class DBContextConfiguration
     {
-        public static IServiceCollection DbConfigure(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddDbContext<ReserveFoodDb>(o =>
-            {
-                 o.UseSqlServer(configuration.GetConnectionString("Index"));
-            });
-            return services;
-        }
+        //public static IServiceCollection DbConfigure(this IServiceCollection services, IConfiguration configuration)
+        //{
+        //    services.AddDbContext<ReserveFoodDb>(o =>
+        //    {
+        //         o.UseSqlServer(configuration.GetConnectionString("Index"));
+        //    });
+        //    return services;
+        //}
     }
 }

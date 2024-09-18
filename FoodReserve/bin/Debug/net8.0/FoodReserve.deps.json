@@ -953,7 +953,8 @@
         "dependencies": {
           "Application.Contract": "1.0.0",
           "Domain": "1.0.0",
-          "MediatR": "12.4.0"
+          "MediatR": "12.4.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0"
         },
         "runtime": {
           "Application.dll": {
@@ -964,7 +965,8 @@
       },
       "Application.Contract/1.0.0": {
         "dependencies": {
-          "MediatR": "12.4.0"
+          "MediatR": "12.4.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0"
         },
         "runtime": {
           "Application.Contract.dll": {

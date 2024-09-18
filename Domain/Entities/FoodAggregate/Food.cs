@@ -16,7 +16,7 @@ namespace Domain.Entities.FoodAggregate
         public string Name { get; private set; }
         public int Prise { get; private set; }
         public uint Weight { get; private set; }
-        public Guid FileId { get; private set; }
+        public Guid? FileId { get; private set; }
         public Guid FoodCategoryId { get; private set; }
         public byte SuitableHowMany { get; private set; }
         public bool IsActive { get; private set; }
