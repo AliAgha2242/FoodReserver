@@ -33,6 +33,7 @@ app.UseAntiforgery();
 app.UseHttpsRedirection();
 app.PersonMinimalApi();
 app.FoodCategoryMinimalApi();
+app.FoodMinimalApi();
 
 
 

@@ -49,6 +49,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [

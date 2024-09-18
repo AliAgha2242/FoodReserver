@@ -1,4 +1,5 @@
-﻿using Application.Contract.Dtos.FoodCategory;
+﻿using Application.Contract.Dtos.Food;
+using Application.Contract.Dtos.FoodCategory;
 using Application.Contract.Dtos.Person;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -67,5 +68,13 @@ namespace FoodReserve.MinimalApies
             }).WithTags("FoodCategory");
             return app ;
         } 
+        public static IApplicationBuilder FoodMinimalApi(this WebApplication app)
+        {
+            app.MapPost("/CreateFood", async (IMediator mediator , [FromForm] CreateFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithOpenApi().WithTags("Food");
+            return app ;
+        }
     }
 }

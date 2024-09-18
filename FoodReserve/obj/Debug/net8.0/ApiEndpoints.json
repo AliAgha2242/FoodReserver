@@ -1,6 +1,33 @@
 [
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_0",
+    "RelativePath": "CreateFood",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.CreateFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.CreateFoodResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_0",
     "RelativePath": "CreateFoodCategory",
     "HttpMethod": "POST",

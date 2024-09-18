@@ -23,7 +23,7 @@ namespace Domain.Entities.FoodAggregate
             FoodId = foodId;
         }
 
-        public static FoodFile Create(string name, string alt, string title,
+        internal static FoodFile Create(string name, string alt, string title,
             string address, double size, Guid foodId)
         {
             return new FoodFile(name, alt, title, address, size, foodId);

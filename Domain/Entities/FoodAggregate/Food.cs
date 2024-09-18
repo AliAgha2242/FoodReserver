@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Domain.Entities.FoodAggregate
 {
@@ -24,7 +25,8 @@ namespace Domain.Entities.FoodAggregate
         public ICollection<Reserve> Reserves { get; private set; }
 
         private Food(string name, int prise, uint weight, Guid fileId,
-           Guid foodCategoryId, byte suitableHowMany)
+           Guid foodCategoryId, byte suitableHowMany ,string fileAlt,string fileTitle,
+           string fileAddress,double fileSize )
         {
             Name = name;
             Prise = prise;
@@ -33,12 +35,21 @@ namespace Domain.Entities.FoodAggregate
             FoodCategoryId = foodCategoryId;
             SuitableHowMany = suitableHowMany;
             IsActive = true;
+            FoodFile = FoodFileGenerate(string.Concat(name,"-File"),fileAlt,fileTitle,fileAddress,fileSize,this.Id);
+        }
+
+
+        private FoodFile FoodFileGenerate(string name,string fileAlt,string fileTitle,
+           string fileAddress,double fileSize,Guid Id)
+        {
+            return FoodFile.Create(string.Concat(name , "-File"),fileAlt,fileTitle,fileAddress,fileSize,Id);
         }
 
         public static Food Create(string name, int prise, uint weight, Guid fileId,
-           Guid foodCategoryId, byte suitableHowMany)
+           Guid foodCategoryId, byte suitableHowMany,string fileAlt,string fileTitle,string fileAddress,double fileSize)
         {
-            return new Food(name, prise, weight, fileId, foodCategoryId, suitableHowMany);
+            return new Food(name, prise, weight, fileId, foodCategoryId, suitableHowMany,
+                fileAlt,fileTitle,fileAddress,fileSize);
         }
 
 
