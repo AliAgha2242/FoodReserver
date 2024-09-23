@@ -13,7 +13,7 @@ namespace Domain.Entities.AddressAggreagte
         public int Pelak { get; private set; }
         public int PostalCode { get; private set; }
         public Guid PersonId {get; private set;}
-        public bool IsActived { get; private set; }
+        public bool IsUnBlock { get; private set; }
         public Person Person { get; private set; }
         public ICollection<Reserve> Reserves { get; private set; }
 
@@ -22,7 +22,7 @@ namespace Domain.Entities.AddressAggreagte
             Ostan = ostan;
             Shahr = shahr;
             RestAddress = restAddress;
-            IsActived = true;
+            IsUnBlock = true;
             Pelak = pelak;
             PostalCode = postalCode;
             PersonId = personId;
@@ -39,21 +39,22 @@ namespace Domain.Entities.AddressAggreagte
             Ostan = ostan;
             Shahr = shahr;
             RestAddress = restAddress;
-            IsActived = true;
+            IsUnBlock = true;
             Pelak = pelak;
             PostalCode = postalCode;
         }
 
-        public void RemoveAddress()
+        public void BlockAddress()
         {
-            this.IsActived = false ;
+            this.IsUnBlock = false ;
         }
-        public void RestoreAddress()
+        public void UnblockAddress()
         {
-            this.IsActived = true ;
+            this.IsUnBlock = true ;
         }
 
-        //For EfCore
+        //For EfCore 
         public Address() { }
     }
 }
+ 

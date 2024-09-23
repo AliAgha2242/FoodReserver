@@ -9,7 +9,7 @@ namespace Domain.Entities.AddressAggreagte
 {
     public interface IAddressRepository:IGenericRepository<Address>
     {
-        Task Delete(Guid addressId);
-        Task Restore(Guid addressId);
+        Task Block(Guid addressId);
+        Task UnBlock(Guid addressId);
     }
 }

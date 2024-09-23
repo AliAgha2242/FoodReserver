@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Infrastructure.bootstrapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ab6ef1aa02d279b67f4c617a8a8c1054a0db138")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9abba821049705b42614986b2df99d1692863c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Infrastructure.bootstrapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Infrastructure.bootstrapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

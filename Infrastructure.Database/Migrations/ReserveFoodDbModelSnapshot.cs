@@ -43,7 +43,7 @@ namespace Infrastructure.Database.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsActived")
+                    b.Property<bool>("IsUnBlock")
                         .HasColumnType("bit");
 
                     b.Property<string>("Ostan")
@@ -78,9 +78,6 @@ namespace Infrastructure.Database.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("FileId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("FoodCategoryId")

@@ -19,13 +19,19 @@ namespace Infrastructure.Database.Repositories
         }
 
 
-        public async Task Delete(Guid reserveId)
+        public async Task Cancel(Guid reserveId)
         {
             Reserve? reserve = await GetAsync(reserveId);
             if (reserve != null)
             {
-                reserve.RemoveReserve();
+                reserve.CancelReserve();
             }
+        }
+
+        public async Task<bool> HasCredit(Guid reserveId)
+        {
+            Reserve reserve = await FoodDb.Reserves.FindAsync(reserveId);
+            return reserve.ReserveDate < DateTime.Now; 
         }
     }
 }

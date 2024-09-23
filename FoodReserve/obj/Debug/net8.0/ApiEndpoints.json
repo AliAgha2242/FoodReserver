@@ -1,6 +1,33 @@
 [
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CAddressMinimalApi\u003Eb__3_0",
+    "RelativePath": "CreateAddress",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Address.CreateAddressRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Address.CreateAddressResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Address"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CFoodMinimalApi\u003Eb__2_0",
     "RelativePath": "CreateFood",
     "HttpMethod": "POST",
@@ -84,7 +111,7 @@
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CPersonMinimalApi\u003Eb__0_2",
     "RelativePath": "DeletePerson",
-    "HttpMethod": "POST",
+    "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
     "Parameters": [
@@ -105,6 +132,60 @@
     ],
     "Tags": [
       "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CAddressMinimalApi\u003Eb__3_3",
+    "RelativePath": "EditAddress",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Address.EditAddressRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Address.EditAddressResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Address"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_5",
+    "RelativePath": "EditFood",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.EditFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.EditFoodResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
     ]
   },
   {
@@ -132,6 +213,75 @@
     ],
     "Tags": [
       "FoodCategory"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CAddressMinimalApi\u003Eb__3_1",
+    "RelativePath": "GetAddress",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Address.GetAddressRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Address.GetAddressResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Address"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CAddressMinimalApi\u003Eb__3_2",
+    "RelativePath": "GetAllAddress",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Address.GetAllAddressResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Address"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_1",
+    "RelativePath": "GetAllFood",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Application.Contract.Dtos.Food.GetAllFoodResponse, Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
     ]
   },
   {
@@ -174,6 +324,33 @@
     ],
     "Tags": [
       "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_2",
+    "RelativePath": "GetFood",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.GetFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.GetFoodResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
     ]
   },
   {
@@ -232,6 +409,33 @@
   },
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_3",
+    "RelativePath": "RemoveFood",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.RemoveFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.RemoveFoodResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_2",
     "RelativePath": "RemoveFoodCategory",
     "HttpMethod": "DELETE",
@@ -286,6 +490,33 @@
   },
   {
     "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_4",
+    "RelativePath": "RestoreFood",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.RestoreFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.RestoreFoodResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
     "Method": "\u003CFoodCategoryMinimalApi\u003Eb__1_3",
     "RelativePath": "RestoreFoodCategory",
     "HttpMethod": "POST",
@@ -336,6 +567,33 @@
     ],
     "Tags": [
       "Person"
+    ]
+  },
+  {
+    "ContainingType": "FoodReserve.MinimalApies.MinimalApiExtenssion\u002B\u003C\u003Ec",
+    "Method": "\u003CFoodMinimalApi\u003Eb__2_6",
+    "RelativePath": "SearchFood",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Contract.Dtos.Food.SearchFoodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Contract.Dtos.Food.SearchFoodResponseAgg",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Food"
     ]
   }
 ]

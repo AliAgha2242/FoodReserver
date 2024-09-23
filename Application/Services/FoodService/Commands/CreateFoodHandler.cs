@@ -56,13 +56,21 @@ namespace Application.Services.FoodService.Commands
                 return new CreateFoodResponse(){ IsOkey=false,Message = "file size is large",StatusCode=500};
 
             FoodCategory foodCategory = await CategoryRepository.GetAsync(request.CategoryId) ;
+
             (string , string) addressAndNameFile =  await FileTools.SaveFileAsync(request.File,foodCategory.CategoryName);
             
-            //await Repository.CreateAsync(Food.Create(request.FoodName,request.Prise,request.Weight,
-            //    request))
+            var food = Food.Create(request.FoodName, request.Prise, request.Weight,request.CategoryId,
+                request.SuitableHowMany,request.FileAlt,request.FileTitle,addressAndNameFile.Item1,
+                FileTools.GetFileSize(request.File));
+
+            await Repository.CreateAsync(food);
+
 
             await Repository.SaveChengesAsync();
-            return new CreateFoodResponse();
+            return new CreateFoodResponse()
+            {
+                Id = food.Id,
+            };
 
 
         }

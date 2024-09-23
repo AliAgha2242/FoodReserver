@@ -20,21 +20,22 @@ namespace Domain.Entities.ReserveAggregate
         public Recive? Recive{ get; private set; }
 
 
-        private Reserve( DateTime reserveDate, Guid personId, Guid addressid)
+        private Reserve( DateTime reserveDate, Guid personId, Guid addressid,ICollection<Food> foods)
         {
             ReserveDate = reserveDate;
             PersonId = personId;
             Addressid = addressid;
             CreateReserveTime = DateTime.Now;
             IsActive = true;
+            Foods = foods;
         }
 
-        public static Reserve Create(DateTime reserveDate, Guid personId, Guid addressid)
+        public static Reserve Create(DateTime reserveDate, Guid personId, Guid addressid,ICollection<Food> foods)
         {
-            return new Reserve( reserveDate, personId, addressid);
+            return new Reserve( reserveDate, personId, addressid,foods);
         }
 
-        public void RemoveReserve()
+        public void CancelReserve()
         {
             IsActive = false;
         }

@@ -1,4 +1,5 @@
-﻿using Application.Contract.Dtos.Food;
+﻿using Application.Contract.Dtos.Address;
+using Application.Contract.Dtos.Food;
 using Application.Contract.Dtos.FoodCategory;
 using Application.Contract.Dtos.Person;
 using MediatR;
@@ -19,7 +20,7 @@ namespace FoodReserve.MinimalApies
             {
                 return await mediator.Send(new GetAllPersonRequest());
             }).WithTags("Person");
-            app.MapPost("/DeletePerson", async (IMediator mediator, [FromBody] RemovePersonRequest request) =>
+            app.MapDelete("/DeletePerson", async (IMediator mediator, [FromBody] RemovePersonRequest request) =>
             {
                 return await mediator.Send(request);
             }).WithTags("Person");
@@ -73,8 +74,57 @@ namespace FoodReserve.MinimalApies
             app.MapPost("/CreateFood", async (IMediator mediator , [FromForm] CreateFoodRequest request) =>
             {
                 return await mediator.Send(request);
-            }).WithOpenApi().WithTags("Food");
+            }).WithOpenApi().WithTags("Food").DisableAntiforgery();
+
+            app.MapGet("/GetAllFood",async (IMediator mediator) =>
+            {
+                return await mediator.Send(new GetAllFoodRequest());
+                
+            }).WithTags("Food");
+
+            app.MapPost("/GetFood",async (IMediator mediator,[FromBody]GetFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+                
+            }).WithTags("Food");
+
+            app.MapDelete("/RemoveFood",async (IMediator mediator , [FromBody]RemoveFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Food");
+            app.MapPost("/RestoreFood",async (IMediator mediator , [FromBody]RestoreFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Food");
+            app.MapPost("/EditFood",async (IMediator mediator ,[FromForm] EditFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithOpenApi().WithTags("Food").DisableAntiforgery();
+            app.MapPost("/SearchFood",async (IMediator mediator ,[FromBody] SearchFoodRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Food");
             return app ;
+        }
+        public static IApplicationBuilder AddressMinimalApi(this WebApplication app)
+        {
+            app.MapPost("/CreateAddress", async (IMediator mediator , [FromBody]CreateAddressRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Address");
+            app.MapPost("/GetAddress", async (IMediator mediator , [FromBody] GetAddressRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Address");
+            app.MapGet("/GetAllAddress", async (IMediator mediator) =>
+            {
+                return await mediator.Send(new GetAllAddressRequest());
+            }).WithTags("Address");
+            app.MapPost("/EditAddress", async (IMediator mediator , [FromBody] EditAddressRequest request) =>
+            {
+                return await mediator.Send(request);
+            }).WithTags("Address");
+            return app;
         }
     }
 }

@@ -10,9 +10,12 @@ namespace Domain.Entities.FoodAggregate
 {
     public interface IFoodRepository : IGenericRepository<Food>
     {
-        Task Delete(Guid foodId);
+        Task Remove(Guid foodId);
         Task Restore(Guid foodId);
-
+        Task<ICollection<Food>> GetAllWithFileAndCategoryRelationAsync();
+        Task<Food> GetWithFileAndCategoryRelationAsync(Guid foodId);
+        Task<string> GetFoodFileAddressAsync(Guid foodId);
+        Task<Food> GetFoodWithFileRelation(Guid id);
 
     }
 }

@@ -4,6 +4,8 @@ using Infrastructure.bootstrapper;
 using FoodReserve.MinimalApies;
 using Infrastructure.Database.Database;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,12 +21,14 @@ builder.Services.MediatRConfigure();
 
 builder.Services.AddOptions();
 builder.Services.Configure<EncriptTools>(builder.Configuration.GetSection("EncriptionConfig"));
-builder.Services.AddDbContext<ReserveFoodDb>(p =>
-{
-    p.UseSqlServer(builder.Configuration.GetConnectionString("Index"));
-});
+builder.Services.Configure<EncriptConfiguration>(builder.Configuration.GetSection("EncriptConfiguration"));
 
-//builder.Services.DbConfigure(builder.Configuration.GetConnectionString("Index"));
+//builder.Services.AddDbContext<ReserveFoodDb>(p =>
+//{
+//    p.UseSqlServer(builder.Configuration.GetConnectionString("Index"));
+//});
+
+builder.Services.DbConfigure(builder.Configuration);
 var app = builder.Build();
 
 
@@ -35,12 +39,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//app.UseStaticFiles(new StaticFileOptions()
+//{
+//    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"Files")),
+//    RequestPath = "files"
+//});
+
+
 
 app.UseAntiforgery();
 app.UseHttpsRedirection();
 app.PersonMinimalApi();
 app.FoodCategoryMinimalApi();
 app.FoodMinimalApi();
+app.AddressMinimalApi();
 
 
 

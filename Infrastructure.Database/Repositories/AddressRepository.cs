@@ -19,21 +19,21 @@ namespace Infrastructure.Database.Repositories
         }
 
 
-        public async Task Delete(Guid addressId)
+        public async Task Block(Guid addressId)
         {
             Address? address = await GetAsync(addressId);
             if (address != null)
             {
-                address.RemoveAddress();
+                address.BlockAddress();
             }
 
         }
-        public async Task Restore(Guid addressId)
+        public async Task UnBlock(Guid addressId)
         {
             Address? address = await GetAsync(addressId);
             if (address != null)
             {
-                address.RestoreAddress();
+                address.UnblockAddress();
             }
 
         }

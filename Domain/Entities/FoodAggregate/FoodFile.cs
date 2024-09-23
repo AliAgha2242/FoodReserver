@@ -28,6 +28,14 @@ namespace Domain.Entities.FoodAggregate
         {
             return new FoodFile(name, alt, title, address, size, foodId);
         }
+        internal void Edit(string name , string alt , string title,string address ,double size)
+        {
+            this.Name = name;
+            this.Alt = alt;
+            this.Title = title;
+            this.Address = address;
+            this.Size = size;
+        }
 
         //Ctor For EfCore
         public FoodFile()

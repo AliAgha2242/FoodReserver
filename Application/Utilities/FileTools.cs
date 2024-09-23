@@ -10,36 +10,57 @@ namespace Application.Utilities
 {
     public class FileTools
     {
-        public long MaxFileSizeInByte { get; set; }
-        public string[] FileValidExtension { get; set; } = {".jpg",".png",".mp4"};
+        public long MaxFileSizeInByte { get; set; } = 1024 * 1024 * 1024;
+        public string[] FileValidExtension { get; set; } = { ".jpg", ".png", ".mp4" };
+        public EncriptTools EncriptTools { get; }
 
-        public async Task<(string ,string)> SaveFileAsync(IFormFile file, string folderName) //Folder Name Is Category Of Food
+        public FileTools(EncriptTools encriptTools)
         {
-            string folderAddress = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","Files",folderName);
-            if(!Directory.Exists(folderAddress))
+            EncriptTools = encriptTools;
+        }
+
+        public async Task<(string, string)> SaveFileAsync(IFormFile file, string folderName) //Folder Name Is Category Of Food
+        {
+            string folderAddress = Path.Combine(Directory.GetCurrentDirectory(), "Files", folderName);
+            if (!Directory.Exists(folderAddress))
                 Directory.CreateDirectory(folderAddress);
 
-            string fileName = string.Concat(folderName,DateTime.Now.Ticks.ToString(),Path.GetExtension(file.FileName));
+            string fileName = string.Concat(folderName, DateTime.Now.Ticks.ToString(), Path.GetExtension(file.FileName));
+            string fileAddress = Path.Combine(folderAddress, fileName);
 
 
-            string fileAddress = Path.Combine(folderAddress,fileName);
-            using Stream stream = new FileStream(fileAddress, FileMode.Create,FileAccess.Write);
+            var fileArray = EncriptTools.EncriptFile(file);
+
+            using (var writer = new BinaryWriter(File.OpenWrite(fileAddress)))
             {
-                await file.CopyToAsync(stream);
+                writer.Write(fileArray);
             };
-            return (string.Concat(@"/",Path.Combine(folderName,fileName)),fileName);
+
+            string Address = string.Concat("/Files/", folderName, "/", fileName);
+            return (Address, fileName);
         }
+
+
+
         public bool CheckSize(IFormFile file)
         {
-             return file.Length <= MaxFileSizeInByte ;
+            return file.Length <= MaxFileSizeInByte * 10;
         }
         public bool CheckExtension(IFormFile file)
         {
             return FileValidExtension.Contains(Path.GetExtension(file.FileName).ToLower());
         }
         public bool IsNotNull(IFormFile file)
-            { return file != null; }
+        { return file != null; }
+        public double GetFileSize(IFormFile file) { return file.Length; }
 
-
+        public void RemoveFile(string address)
+        {
+            address = string.Concat(".", address);
+            if (!File.Exists(address))
+                return;
+            File.Delete(address);
+        }
+        
     }
 }

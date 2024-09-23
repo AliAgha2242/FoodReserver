@@ -10,7 +10,8 @@ namespace Domain.Entities.ReserveAggregate
 {
     public interface IReserveRepository : IGenericRepository<Reserve>
     {
-        Task Delete(Guid reserveId);
+        Task Cancel(Guid reserveId);
+        Task<bool> HasCredit(Guid reserveId);
     }
 }
 

@@ -148,3 +148,11 @@ D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\obj\Debug\net8.0\Food
 D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\obj\Debug\net8.0\FoodReserve.genruntimeconfig.cache
 D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\obj\Debug\net8.0\ref\FoodReserve.dll
 D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\obj\Debug\net8.0\FoodReserve.MvcApplicationPartsAssemblyInfo.cs
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\FoodReserve.staticwebassets.runtime.json
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\Dapper.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\MySource\FoodReserverApiProject\FoodReserve\FoodReserve\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

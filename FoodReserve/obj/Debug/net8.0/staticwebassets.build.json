@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "+S9Ib2iwShug7L/VjfjW/D6A9ddPSk5sdqur02Pt5BE=",
+  "Hash": "BH6ga/2FlvwRD7lpkZnuHYfbeSAQ2JhSGiWGkk5J2mg=",
   "Source": "FoodReserve",
   "BasePath": "_content/FoodReserve",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FoodReserve\\wwwroot",
+      "Source": "FoodReserve",
+      "ContentRoot": "D:\\MySource\\FoodReserverApiProject\\FoodReserve\\FoodReserve\\wwwroot\\",
+      "BasePath": "_content/FoodReserve",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
